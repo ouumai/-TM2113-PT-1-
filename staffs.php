@@ -4,8 +4,8 @@ ob_start();
  
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
-        <h2 class="mb-1">Customers</h2>
-        <p class="text-muted mb-0">Manage and track all your customers</p>
+        <h2 class="mb-1">Staffs</h2>
+        <p class="text-muted mb-0">Manage and track all staff members</p>
     </div>
 </div>
  
@@ -15,10 +15,10 @@ ob_start();
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
-                    <i class="bi bi-person-plus text-primary me-2"></i>
-                    Customer Form
+                    <i class="bi bi-person-badge text-primary me-2"></i>
+                    Staff Form
                 </h5>
-                <small class="text-muted">Fill in the details of a customer</small>
+                <small class="text-muted">Fill in the details of a staff member</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-primary">* Required fields</span>
@@ -30,29 +30,22 @@ ob_start();
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
-                    <label for="cid" class="form-label">Customer ID <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="customer_num" id="customer_num" class="form-control" placeholder="Enter Customer ID" value="" required>
+                    <label for="sid" class="form-label">Staff ID <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input type="text" name="staff_num" id="staff_num" class="form-control" placeholder="Enter Staff ID" value="" required>
                 </div>
                 <div class="col-md-3">
                     <label for="name" class="form-label">Name <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="Enter Customer Name" value="" required>
+                    <input type="text" name="staff_name" id="staff_name" class="form-control" placeholder="Enter Staff Name" value="" required>
                 </div>
-                <div class="col-md-3">
-                    <label for="gender" class="form-label">Gender <span class="text-danger" aria-hidden="true">*</span></label>
-                    <select name="customer_gender" id="customer_gender" class="form-control" placeholder="Select Gender" required>
-                        <option value="" disabled selected>Select Gender</option>                        
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                </div>
+                
                 <div class="col-md-3">
                     <label for="phone_number" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="customer_phone" id="customer_phone" class="form-control" placeholder="Enter Phone Number" required>
+                    <input type="text" name="staff_phone" id="staff_phone" class="form-control" placeholder="Enter Phone Number" required>
                 </div>
  
                 <div class="col-md-3">
-                    <label for="register_date" class="form-label">Register Date <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="date" name="register_date" id="register_date" class="form-control" placeholder="Select Register Date" required>
+                    <label for="email-address" class="form-label">Email Address <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input type="email" name="staff_email" id="staff_email" class="form-control" placeholder="Enter Email Address" required>
                 </div>
              
             <hr class="mt-4 mb-3">
@@ -78,9 +71,9 @@ ob_start();
             <div class="col">
                 <h5 class="mb-0">
                     <i class="bi bi-table text-primary me-2"></i>
-                    Customer List
+                    Staff List
                 </h5>
-                <small class="text-muted">View and manage all customers</small>
+                <small class="text-muted">View and manage all staff members</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-success">Total: 1 items</span>
@@ -93,21 +86,19 @@ ob_start();
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th>Customer ID</th>
+                        <th>Staff ID</th>
                         <th>Name</th>
-                        <th>Gender</th>
                         <th>Phone</th>
-                        <th>Register Date</th>
+                        <th>Email</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>C001</td>
+                        <td>S001</td>
                         <td>Umairah Sabri</td>
-                        <td>Female</td>
                         <td>010-8453088</td>
-                        <td>28-10-2026</td>
+                        <td>n.umairahsabri@gmail.com</td>
                         <td>
 
                             <a href="#" class="btn btn-sm btn-warning">
@@ -119,7 +110,7 @@ ob_start();
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-center">No customers found</td>
+                        <td colspan="5" class="text-center">No staff members found</td>
                     </tr>
                 </tbody>
             </table>
