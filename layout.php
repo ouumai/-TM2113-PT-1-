@@ -71,7 +71,7 @@
         </div>
          
         <div class="p-4">
-          Put content here.
+          <?= $content ?? '' ?>
         </div>
       </div>
  
