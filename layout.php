@@ -9,7 +9,7 @@
 <body>
   <div class="container-fluid p-0 min-vh-100">
     <div class="row g-0 min-vh-100">
-       
+ 
       <div id="mySidebar" class="col-auto bg-dark text-white offcanvas-lg offcanvas-start">
         <div class="p-4">
           <a href="#" class="navbar-brand">
@@ -17,7 +17,9 @@
               <h5 class="">My Company</h5>
             </div>
           </a>
-          <hr>                  
+ 
+          <hr>
+           
           <ul class="mynav nav nav-pills flex-column">
             <li class="nav-item mb-3 mt-2">
               <a href="" class="text-decoration-none text-white">
@@ -33,29 +35,45 @@
             </li>
             <!-- Add more menus -->
           </ul>
-          <hr>                  
-          <div class="dropdown">
-            <a href="#" class="text-decoration-none text-white dropdown-toggle d-inline-block align-middle" data-bs-toggle="dropdown">                       
  
-              <div class="rounded-circle bg-secondary text-center d-inline-block align-middle" style="width: 50px; height: 50px; line-height: 50px;">
+          <hr>
+             
+          <div class="dropdown">
+            <a href="#" class="text-decoration-none text-white dropdown-toggle d-inline-block align-middle" data-bs-toggle="dropdown">
+                 
+              <div class="rounded-circle bg-secondary text-center d-inline-block align-middle"
+                style="width: 50px; height: 50px; line-height: 50px;">
                 <i class="bi bi-person-fill text-white fs-4"></i>
               </div>
-                           
+               
               <div class="d-inline-block align-middle ms-2 text-start">
                 <h6 class="mb-0 text-nowrap">User</h6>
                 <small class="text-white-50 text-nowrap d-block">user@email.com</small>
               </div>
-                         
+                 
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="">Logout</a></li>
+                <li><a class="dropdown-item" href="">Logout</a></li>
             </ul>
           </div>
  
         </div>
       </div>
  
-      <div class="col-auto">Put content here.</div>
+      <div class="col bg-light">
+        <!-- Mobile Header with Burger -->
+        <div id="myBurger" class="p-3 d-lg-none text-white bg-dark">
+          <div class="row">
+            <a href="#" class="text-white text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#mySidebar">
+              <i class="bi bi-list"></i><h5 class="ms-3 d-inline">My Company</h5>
+            </a>
+          </div>
+        </div>
+         
+        <div class="p-4">
+          Put content here.
+        </div>
+      </div>
  
     </div>
   </div>
