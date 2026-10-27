@@ -15,7 +15,7 @@ ob_start();
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
-                    <i class="bi bi-pencil-square text-primary me-2"></i>
+                    <i class="bi bi-person-plus text-primary me-2"></i>
                     Customer Form
                 </h5>
                 <small class="text-muted">Fill in the details of a customer</small>
@@ -78,7 +78,7 @@ ob_start();
             <div class="col">
                 <h5 class="mb-0">
                     <i class="bi bi-table text-primary me-2"></i>
-                    Product List
+                    Customer List
                 </h5>
                 <small class="text-muted">View and manage all customers</small>
             </div>
