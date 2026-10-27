@@ -93,26 +93,26 @@ ob_start();
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th>Product ID</th>
+                        <th>Customer ID</th>
                         <th>Name</th>
-                        <th>Price</th>
-                        <th>Brand</th>
+                        <th>Gender</th>
+                        <th>Phone</th>
+                        <th>Register Date</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>P001</td>
-                        <td>Road Bike</td>
-                        <td>$1,200.00</td>
-                        <td>Cervelo</td>
+                        <td>C001</td>
+                        <td>Umairah Sabri</td>
+                        <td>Female</td>
+                        <td>010-8453088</td>
+                        <td>28-10-2026</td>
                         <td>
+
                             <a href="#" class="btn btn-sm btn-warning">
                                 <i class="bi bi-pencil"></i>
                             </a>
-                            <button type="button" class="btn btn-sm btn-info text-white">
-                                <i class="bi bi-image"></i>
-                            </button>
                             <a href="#" class="btn btn-sm btn-danger">
                                 <i class="bi bi-trash"></i>
                             </a>
