@@ -4,8 +4,8 @@ ob_start();
  
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
-        <h2 class="mb-1">Products</h2>
-        <p class="text-muted mb-0">Manage and track all your products</p>
+        <h2 class="mb-1">Customers</h2>
+        <p class="text-muted mb-0">Manage and track all your customers</p>
     </div>
 </div>
  
@@ -16,9 +16,9 @@ ob_start();
             <div class="col">
                 <h5 class="mb-0">
                     <i class="bi bi-pencil-square text-primary me-2"></i>
-                    Product Form
+                    Customer Form
                 </h5>
-                <small class="text-muted">Fill in the details of a product</small>
+                <small class="text-muted">Fill in the details of a customer</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-primary">* Required fields</span>
@@ -30,7 +30,7 @@ ob_start();
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
-                    <label for="pid" class="form-label">Customer ID <span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="cid" class="form-label">Customer ID <span class="text-danger" aria-hidden="true">*</span></label>
                     <input type="text" name="customer_num" id="customer_num" class="form-control" placeholder="Enter Customer ID" value="" required>
                 </div>
                 <div class="col-md-3">
@@ -38,7 +38,7 @@ ob_start();
                     <input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="Enter Customer Name" value="" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="price" class="form-label">Gender <span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="gender" class="form-label">Gender <span class="text-danger" aria-hidden="true">*</span></label>
                     <select name="customer_gender" id="customer_gender" class="form-control" placeholder="Select Gender" required>
                         <option value="" disabled selected>Select Gender</option>                        
                         <option value="Male">Male</option>
@@ -46,12 +46,12 @@ ob_start();
                     </select>
                 </div>
                 <div class="col-md-3">
-                    <label for="brand" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="phone_number" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
                     <input type="text" name="customer_phone" id="customer_phone" class="form-control" placeholder="Enter Phone Number" required>
                 </div>
  
                 <div class="col-md-3">
-                    <label for="product_condition" class="form-label">Register Date <span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="register_date" class="form-label">Register Date <span class="text-danger" aria-hidden="true">*</span></label>
                     <input type="date" name="register_date" id="register_date" class="form-control" placeholder="Select Register Date" required>
                 </div>
              
@@ -80,7 +80,7 @@ ob_start();
                     <i class="bi bi-table text-primary me-2"></i>
                     Product List
                 </h5>
-                <small class="text-muted">View and manage all products in the inventory</small>
+                <small class="text-muted">View and manage all customers</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-success">Total: 1 items</span>
@@ -119,7 +119,7 @@ ob_start();
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-center">No products found</td>
+                        <td colspan="5" class="text-center">No customers found</td>
                     </tr>
                 </tbody>
             </table>
