@@ -4,8 +4,8 @@ ob_start();
  
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
-        <h2 class="mb-1">Staffs</h2>
-        <p class="text-muted mb-0">Manage and track all staff members</p>
+        <h2 class="mb-1">Orders</h2>
+        <p class="text-muted mb-0">Create and manage customer orders</p>
     </div>
 </div>
  
@@ -15,10 +15,10 @@ ob_start();
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
-                    <i class="bi bi-person-badge text-primary me-2"></i>
-                    Staff Form
+                    <i class="bi bi-cart-plus text-primary me-2"></i>
+                    Order Form
                 </h5>
-                <small class="text-muted">Fill in the details of a staff member</small>
+                <small class="text-muted">Create an order header before adding products</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-primary">* Required fields</span>
@@ -30,22 +30,25 @@ ob_start();
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
-                    <label for="sid" class="form-label">Staff ID <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="staff_num" id="staff_num" class="form-control" placeholder="Enter Staff ID" value="" required>
+                    <label for="order_date" class="form-label">Order Date <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input type="date" name="order_date" id="order_date" class="form-control" placeholder="Enter Order Date" value="" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="name" class="form-label">Name <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="staff_name" id="staff_name" class="form-control" placeholder="Enter Staff Name" value="" required>
+                    <label for="name" class="form-label">Staff <span class="text-danger" aria-hidden="true">*</span></label>
+                    <select name="staff_num" id="staff_num" class="form-control" required>
+                        <option value="">Select Staff</option>
+                        <option value="S001">S001</option>
+                        <option value="S002">S002</option>
+                    </select>
                 </div>
                 
                 <div class="col-md-3">
-                    <label for="phone_number" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="text" name="staff_phone" id="staff_phone" class="form-control" placeholder="Enter Phone Number" required>
-                </div>
- 
-                <div class="col-md-3">
-                    <label for="email-address" class="form-label">Email Address <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input type="email" name="staff_email" id="staff_email" class="form-control" placeholder="Enter Email Address" required>
+                    <label for="phone_number" class="form-label">Customer <span class="text-danger" aria-hidden="true">*</span></label>
+                    <select name="customer_num" id="customer_num" class="form-control" required>
+                        <option value="">Select Customer</option>
+                        <option value="C001">C001</option>
+                        <option value="C002">C002</option>
+                    </select>
                 </div>
              
             <hr class="mt-4 mb-3">
@@ -71,9 +74,9 @@ ob_start();
             <div class="col">
                 <h5 class="mb-0">
                     <i class="bi bi-table text-primary me-2"></i>
-                    Staff List
+                    Order List
                 </h5>
-                <small class="text-muted">View and manage all staff members</small>
+                <small class="text-muted">View orders and their products</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-success">Total: 1 items</span>
@@ -86,19 +89,19 @@ ob_start();
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th>Staff ID</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Email</th>
+                        <th>Order No.</th>
+                        <th>Date</th>
+                        <th>Staff</th>
+                        <th>Customer</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>S001</td>
+                        <td>O001</td>
+                        <td>2023-10-28</td>
                         <td>Umairah Sabri</td>
-                        <td>010-8453088</td>
-                        <td>n.umairahsabri@gmail.com</td>
+                        <td>Hidayah Shahadah</td>
                         <td>
 
                             <a href="#" class="btn btn-sm btn-warning">
@@ -110,7 +113,7 @@ ob_start();
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-center">No staff members found</td>
+                        <td colspan="5" class="text-center">No orders found</td>
                     </tr>
                 </tbody>
             </table>
