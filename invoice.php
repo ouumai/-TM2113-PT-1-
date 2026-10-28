@@ -70,8 +70,30 @@ ob_start();
 </div>
  
 <style>
-@media print {
- 
+@media print 
+{
+    header, 
+    .header, 
+    .app-header, 
+    .burger-header, 
+    .sidebar,
+    .btn, 
+    #myBurger,
+    #mySidebar
+    {
+        display: none !important;
+    }
+
+    .card 
+    {
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    body 
+    {
+        background-color: white !important;
+    }
 }
 </style>
  
